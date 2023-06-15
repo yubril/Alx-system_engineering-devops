@@ -1,0 +1,2 @@
+#!/bin/bash
+read -p "Enter words (one word per line, Ctrl+D to finish):" -a words; printf "%s\n" "${words[@]}" | sort | uniq -u | tr '\n' ' '
